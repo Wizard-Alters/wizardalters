@@ -33,10 +33,35 @@
   }
 }
 
-.card {
-  padding: 2em;
+a {
+  margin: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+/* header */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.title {
+  grid-column: 1/2;
+  justify-self: left;
+}
+.title:hover {
+  filter: drop-shadow(0 0 0.5em #646cffaa);
+}
+.nav {
+  grid-column: 2/3;
+  align-content: center;
+  font-size: 25px;
+  padding-top: 20px;
+}
+hr {
+  grid-column: 1/3;
+  width: 100%;
+}
+/* body */
+
+/* footer */
+.socials {
+  font-size: 20px;
 }

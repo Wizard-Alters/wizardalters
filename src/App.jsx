@@ -1,35 +1,60 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSquareFacebook,
+  faInstagram,
+  // faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <header className="header">
+        <h1 className="title">🧙‍♂️ Wizard Customs</h1>
+        <nav className="nav">
+          <a href="#" title="Alternative Cards">
+            Alt Cards
+          </a>
+          <a href="#" title="Custom Deck Boxes">
+            Deck Boxes
+          </a>
+          <a href="#" title="Deck Maps">
+            Deck Maps
+          </a>
+        </nav>
+        <hr></hr>
+      </header>
+      <main className="body">
+        <h1 className="title">Whats Popular</h1>
+        <div className="container"></div>
+      </main>
+      <footer className="footer">
+        <div className="socials">
+          <h3>Connect With Us:</h3>
+          <a id="ig" href="#" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            id="fb"
+            href="https://www.facebook.com/profile.php?id=61576092674965"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faSquareFacebook} />
+          </a>
+          {/* <a
+            id="yt"
+            href="https://www.youtube.com/@Thortech117"
+            target="_blank"
+            >
+            <FontAwesomeIcon icon={faYoutube} />
+            </a> */}
+        </div>
+        <a href="#" title="contact">
+          Contact Us
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
