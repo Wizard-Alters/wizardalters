@@ -25,7 +25,7 @@ function App() {
         <hr></hr>
       </header>
       <main className="body">
-        <h1 className="title">Whats Popular</h1>
+        <h1 className="title">What's Popular</h1>
         <div className="container"></div>
       </main>
       <footer className="footer">
