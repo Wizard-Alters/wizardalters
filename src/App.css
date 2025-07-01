@@ -33,6 +33,10 @@
   }
 }
 
+img {
+  max-width: 450px;
+}
+
 a {
   margin: 10px;
 }

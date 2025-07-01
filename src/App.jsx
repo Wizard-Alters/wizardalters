@@ -20,12 +20,12 @@ const cardData = [
   {
     name: "Dragon Ball Plains",
     price: 45,
-    photoName: "./images/db_plains.jpg",
+    photoName: "images/db_plains.jpg",
   },
   {
     name: "Dragon Ball Swamp",
     price: 45,
-    photoName: "/images/db_swamp.jpg",
+    photoName: "images/db_swamp.jpg",
   },
 ];
 
