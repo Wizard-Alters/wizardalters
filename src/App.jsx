@@ -5,6 +5,29 @@ import {
   faInstagram,
   // faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import Card from "./components/card/card";
+
+///////////////////////////////
+// Card Data
+// TODO: Make this data driven
+///////////////////////////////
+const cardData = [
+  {
+    name: "Dragon Ball Mountain",
+    price: 45,
+    photoName: "images/db_mountain.jpg",
+  },
+  {
+    name: "Dragon Ball Plains",
+    price: 45,
+    photoName: "./images/db_plains.jpg",
+  },
+  {
+    name: "Dragon Ball Swamp",
+    price: 45,
+    photoName: "/images/db_swamp.jpg",
+  },
+];
 
 function App() {
   return (
@@ -13,20 +36,24 @@ function App() {
         <h1 className="title">🧙‍♂️ Wizard Customs</h1>
         <nav className="nav">
           <a href="#" title="Alternative Cards">
-            Alt Cards
+            Altered Cards
           </a>
           <a href="#" title="Custom Deck Boxes">
             Deck Boxes
           </a>
-          <a href="#" title="Deck Maps">
-            Deck Maps
-          </a>
+          {/* <a href="#" title="Deck Builder">
+            Build a Deck
+          </a> */}
         </nav>
         <hr></hr>
       </header>
       <main className="body">
         <h1 className="title">What's Popular</h1>
-        <div className="container"></div>
+        <ul className="cards">
+          {cardData.map((card) => (
+            <Card cardObj={card} key={card.name} />
+          ))}
+        </ul>
       </main>
       <footer className="footer">
         <div className="socials">
