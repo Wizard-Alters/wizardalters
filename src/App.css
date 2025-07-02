@@ -64,6 +64,13 @@ hr {
   width: 100%;
 }
 /* body */
+.instructions {
+  justify-self: left;
+}
+.card {
+  padding: 20px;
+  border: blue;
+}
 
 /* footer */
 .socials {

@@ -16,16 +16,19 @@ const cardData = [
     name: "Dragon Ball Mountain",
     price: 45,
     photoName: "images/db_mountain.jpg",
+    quantity: 1,
   },
   {
     name: "Dragon Ball Plains",
     price: 45,
     photoName: "images/db_plains.jpg",
+    quantity: 1,
   },
   {
     name: "Dragon Ball Swamp",
     price: 45,
     photoName: "images/db_swamp.jpg",
+    quantity: 1,
   },
 ];
 
@@ -49,7 +52,13 @@ function App() {
       </header>
       <main className="body">
         <h1 className="title">What's Popular</h1>
-        <ul className="cards">
+        <div className="instructions">
+          <p>To make a purchase, copy the name of your desired product,</p>
+          <p>
+            click "Buy Now", and paste the product name into the venmo payment.
+          </p>
+        </div>
+        <ul className="cards" style={{ listStyleType: "none" }}>
           {cardData.map((card) => (
             <Card cardObj={card} key={card.name} />
           ))}
