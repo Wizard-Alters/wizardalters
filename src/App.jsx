@@ -53,9 +53,11 @@ function App() {
       <main className="body">
         <h1 className="title">What's Popular</h1>
         <div className="instructions">
-          <p>To make a purchase, copy the name of your desired product,</p>
-          <p>
-            click "Buy Now", and paste the product name into the venmo payment.
+          <p style={{ textAlign: "left" }}>
+            To make a purchase, copy the name of your desired product, click
+          </p>
+          <p style={{ textAlign: "left" }}>
+            "Buy Now", and paste the product name into the venmo payment.
           </p>
         </div>
         <ul className="cards" style={{ listStyleType: "none" }}>
