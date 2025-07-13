@@ -67,9 +67,19 @@ hr {
 .instructions {
   justify-self: left;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+  justify-items: center;
+}
 .card {
   padding: 20px;
   border: blue;
+  max-width: 90vw;
+  padding: 25px;
 }
 
 /* footer */
@@ -78,7 +88,7 @@ hr {
 }
 
 /* Media Queries */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   #root {
     padding: 0.5rem;
   }
@@ -98,9 +108,11 @@ hr {
   }
   .cards {
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+    justify-items: center;
   }
   .card {
     max-width: 95vw;
@@ -114,5 +126,19 @@ hr {
   .socials {
     font-size: 16px;
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+    justify-items: center;
+  }
+  .card {
+    max-width: 90vw;
+    padding: 16px;
   }
 }
