@@ -134,7 +134,7 @@ hr {
     justify-items: center;
   }
   .card {
-    max-width: 90vw;
+    max-width: 60vw;
     padding: 16px;
   }
 }
