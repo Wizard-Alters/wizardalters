@@ -6,41 +6,7 @@ import {
   // faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import Card from "./components/card/card";
-
-///////////////////////////////
-// Card Data
-// TODO: Make this data driven
-///////////////////////////////
-const cardData = [
-  {
-    name: "Dragon Ball Mountain",
-    price: 45,
-    photoName: "images/db_mountain.jpg",
-    quantity: 1,
-    stripeLink: "PUT IT HERE",
-  },
-  {
-    name: "Dragon Ball Plains",
-    price: 45,
-    photoName: "images/db_plains.jpg",
-    quantity: 1,
-    stripeLink: "PUT IT HERE",
-  },
-  {
-    name: "Dragon Ball Swamp",
-    price: 45,
-    photoName: "images/db_swamp.jpg",
-    quantity: 1,
-    stripeLink: "PUT IT HERE",
-  },
-  {
-    name: "Dragon Ball Swamp",
-    price: 45,
-    photoName: "images/db_swamp.jpg",
-    quantity: 1,
-    stripeLink: "PUT IT HERE",
-  },
-];
+import cardData from "./components/card/card.json";
 
 function App() {
   return (
