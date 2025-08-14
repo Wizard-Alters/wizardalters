@@ -58,6 +58,7 @@ function App() {
         <a href="#" title="contact">
           Contact Us
         </a>
+        <h6>By Thortech</h6>
       </footer>
     </>
   );
