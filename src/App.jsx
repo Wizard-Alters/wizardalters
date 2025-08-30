@@ -27,7 +27,7 @@ function App() {
         <hr></hr>
       </header>
       <main className="body">
-        <h1 className="title">What's Popular</h1>
+        <h1 className="title">MTG Altered Art Cards</h1>
         <ul className="cards" style={{ listStyleType: "none" }}>
           {cardData.map((card) => (
             <Card cardObj={card} key={card.name} />
