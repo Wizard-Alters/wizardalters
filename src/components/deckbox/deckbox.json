@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Black Deck Box",
+    "price": 20,
+    "photoName": "images/db_mountain.jpg",
+    "stripeLink": "PUT IT HERE"
+  },
+  {
+    "name": "White Deck Box",
+    "price": 20,
+    "photoName": "images/db_plains.jpg",
+    "stripeLink": "PUT IT HERE"
+  },
+  {
+    "name": "Panda Deck Box",
+    "price": 20,
+    "photoName": "images/db_plains.jpg",
+    "stripeLink": "PUT IT HERE"
+  }
+
+]
