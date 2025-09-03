@@ -27,7 +27,9 @@ function App() {
         <hr></hr>
       </header>
       <main className="body">
-        <h1 className="title" style={{ textAlign: 'left' }}>MTG Altered Art Cards</h1>
+        <h1 className="title" style={{ textAlign: "left" }}>
+          MTG Altered Art Cards
+        </h1>
         <ul className="cards" style={{ listStyleType: "none" }}>
           {cardData.map((card) => (
             <Card cardObj={card} key={card.name} />
@@ -37,7 +39,11 @@ function App() {
       <footer className="footer">
         <div className="socials">
           <h3>Connect With Us:</h3>
-          <a id="ig" href="#" target="_blank">
+          <a
+            id="ig"
+            href="https://www.instagram.com/wizardalters?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
@@ -58,7 +64,7 @@ function App() {
         <a href="#" title="contact">
           Contact Us
         </a>
-        <h6>By Thortech</h6>
+        <h6>Site by Thortech</h6>
       </footer>
     </>
   );
