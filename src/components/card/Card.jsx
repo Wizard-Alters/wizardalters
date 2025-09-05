@@ -10,7 +10,7 @@ export default function Card(props) {
         <span>${props.cardObj.price}</span>
         <br></br>
         <span>Quanity: {props.cardObj.quantity}</span>
-        <BuyButton></BuyButton>
+        <BuyButton stripeLink={props.cardObj.stripeLink}></BuyButton>
       </div>
     </li>
   );

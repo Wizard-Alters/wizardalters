@@ -10,7 +10,7 @@ export default function DeckBox(props) {
         <span>${props.boxObj.price}</span>
         <br></br>
         <span>Quanity: {props.boxObj.quantity}</span>
-        <BuyButton></BuyButton>
+        <BuyButton stripeLink={props.boxObj.stripeLink}></BuyButton>
       </div>
     </li>
   );

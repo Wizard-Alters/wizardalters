@@ -1,7 +1,7 @@
-export default function BuyButton() {
+export default function BuyButton({ stripeLink }) {
   return (
     <div className="buyButton">
-      <a href="https://buy.stripe.com/00w5kF2oBf1keNNcicdQQ00" target="_blank">
+        <a href={ stripeLink } target="_blank">
         <button style={{ marginTop: "5px" }}>Buy Now</button>
       </a>
     </div>

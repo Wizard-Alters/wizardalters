@@ -1,7 +1,7 @@
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faSquareFacebook,
+  // faSquareFacebook,
   faInstagram,
   // faYoutube,
 } from "@fortawesome/free-brands-svg-icons";

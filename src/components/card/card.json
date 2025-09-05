@@ -1,37 +1,37 @@
 [
   {
     "name": "Gojo: Nah, I'd Win",
-    "price": 45,
+    "price": 35,
     "photoName": "images/gojo_win.jpg",
     "quantity": 1,
-    "stripeLink": "PUT IT HERE"
+    "stripeLink": "https://buy.stripe.com/28EaEZ3sF06qcFF81WdQQ07"
   },
   {
     "name": "Gojo: You Cryin?",
-    "price": 45,
+    "price": 35,
     "photoName": "images/gojo_cryin.jpg",
     "quantity": 1,
-    "stripeLink": "PUT IT HERE"
+    "stripeLink": "https://buy.stripe.com/7sY4gBbZbg5odJJgysdQQ06"
   },
   {
     "name": "Gojo",
-    "price": 45,
+    "price": 35,
     "photoName": "images/gojo_card.jpg",
     "quantity": 1,
-    "stripeLink": "PUT IT HERE"
+    "stripeLink": "https://buy.stripe.com/aFa9AV4wJ4mGaxx3LGdQQ05"
   },
   {
     "name": "Dragon Ball Plains",
-    "price": 45,
+    "price": 35,
     "photoName": "images/db_plains.jpg",
     "quantity": 1,
-    "stripeLink": "PUT IT HERE"
+    "stripeLink": "https://buy.stripe.com/fZudRbd3f7ySdJJ6XSdQQ03"
   },
   {
     "name": "Dragon Ball Swamp",
-    "price": 45,
+    "price": 35,
     "photoName": "images/db_swamp.jpg",
     "quantity": 1,
-    "stripeLink": "PUT IT HERE"
+    "stripeLink": "https://buy.stripe.com/8x2fZj7IV7yS5dd1DydQQ04"
   }
 ]
