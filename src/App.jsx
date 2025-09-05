@@ -72,9 +72,9 @@ function App() {
             <FontAwesomeIcon icon={faYoutube} />
             </a> */}
         </div>
-        <a href="#" title="contact">
+        {/* <a href="#" title="contact">
           Contact Us
-        </a>
+        </a> */}
         <h6>Site by Thortech</h6>
       </footer>
     </>

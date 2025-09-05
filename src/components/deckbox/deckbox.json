@@ -1,9 +1,9 @@
 [
   {
     "name": "White Deck Box",
-    "price": 20,
-    "photoName": "images/db_plains.jpg",
-    "quantit": 1,
+    "price": 25,
+    "photoName": "images/panda_box.jpg",
+    "quantity": 12,
     "stripeLink": "https://buy.stripe.com/5kQdRb9R306q9tt5TOdQQ02"
   }
 ]
