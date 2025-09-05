@@ -7,6 +7,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Card from "./components/card/card";
 import cardData from "./components/card/card.json";
+import DeckBox from "./components/deckbox/Deckbox";
+import boxData from "./components/deckbox/deckbox.json"
 
 function App() {
   return (
@@ -35,6 +37,15 @@ function App() {
             <Card cardObj={card} key={card.name} />
           ))}
         </ul>
+        {/* boxes */}
+        <h1 className="title" style={{ textAlign: "left" }}>
+          Commander Deck Boxes
+        </h1>
+        <ul className="boxes" style={{ listStyleType: "none" }}>
+          {boxData.map((box) => (
+            <Card cardObj={box} key={box.name} />
+          ))}
+        </ul>
       </main>
       <footer className="footer">
         <div className="socials">
@@ -46,13 +57,13 @@ function App() {
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a
+          {/* <a
             id="fb"
             href="https://www.facebook.com/profile.php?id=61576092674965"
             target="_blank"
           >
             <FontAwesomeIcon icon={faSquareFacebook} />
-          </a>
+          </a> */}
           {/* <a
             id="yt"
             href="https://www.youtube.com/@Thortech117"

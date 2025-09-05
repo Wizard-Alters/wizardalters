@@ -1,21 +1,9 @@
 [
   {
-    "name": "Black Deck Box",
-    "price": 20,
-    "photoName": "images/db_mountain.jpg",
-    "stripeLink": "PUT IT HERE"
-  },
-  {
     "name": "White Deck Box",
     "price": 20,
     "photoName": "images/db_plains.jpg",
-    "stripeLink": "PUT IT HERE"
-  },
-  {
-    "name": "Panda Deck Box",
-    "price": 20,
-    "photoName": "images/db_plains.jpg",
-    "stripeLink": "PUT IT HERE"
+    "quantit": 1,
+    "stripeLink": "https://buy.stripe.com/5kQdRb9R306q9tt5TOdQQ02"
   }
-
 ]
