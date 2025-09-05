@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <h1 className="title">🧙‍♂️ Wizard Customs</h1>
+        <h1 className="title">🧙‍♂️ Wizard Alters</h1>
         <nav className="nav">
           <a href="#" title="Alternative Cards">
             Altered Cards
