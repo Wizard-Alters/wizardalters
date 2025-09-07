@@ -4,6 +4,7 @@ import {
   // faSquareFacebook,
   // faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import ContactModal from "../../contact/ContactModal";
 
 export default function Socials () {
     return (
@@ -32,9 +33,7 @@ export default function Socials () {
             <FontAwesomeIcon icon={faYoutube} />
             </a> */}
         </div>
-        {/* <a href="#" title="contact">
-          Contact Us
-        </a> */}
+        <ContactModal />
         <h6>Site by Thortech</h6>
       </>
     );
