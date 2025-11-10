@@ -1,4 +1,3 @@
-import { useState } from "react";
 import SubmitButton from "../submitButton/SubmitButton";
 
 export default function ContactModal() {

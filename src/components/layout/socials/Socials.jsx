@@ -1,8 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, far } from "@fortawesome/free-regular-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+library.add(fas, far, fab);
+
 import {
   faInstagram,
   // faSquareFacebook,
   // faYoutube,
+
 } from "@fortawesome/free-brands-svg-icons";
 import ContactModal from "../../contact/ContactModal";
 
@@ -33,6 +40,9 @@ export default function Socials () {
             <FontAwesomeIcon icon={faYoutube} />
             </a> */}
         </div>
+        <a id="contact" href="#" target="_blank">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
         <ContactModal />
         <h6>Site by Thortech</h6>
       </>
