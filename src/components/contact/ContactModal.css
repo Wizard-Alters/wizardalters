@@ -1,0 +1,221 @@
+/* ContactModal.css
+   Styles to render the contact component as a centered modal with overlay,
+   responsive sizing, close button, and simple fade/scale transitions.
+*/
+
+/* Overlay covers the viewport and dims background */
+.contact-modal-overlay {
+  position: fixed;
+  inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0; */
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 240ms cubic-bezier(.2,.9,.2,1);
+}
+
+/* When open, show overlay */
+.contact-modal-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal container */
+.contact-modal {
+  background: #1a1a1a; /* match site button/bg tone */
+  color: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  /* smaller, responsive width: min on mobile, max on desktop */
+  width: clamp(300px, 56vw, 480px);
+  max-height: 88vh;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6), 0 0 24px rgba(100,108,255,0.03);
+  transform: translateY(8px) scale(0.98);
+  opacity: 0;
+  overflow: auto;
+  transition: transform 240ms cubic-bezier(.2,.9,.2,1), opacity 200ms ease-in-out;
+  will-change: transform, opacity;
+  border: 1px solid rgba(255,255,255,0.03);
+  margin: 0 16px;
+}
+
+/* Open state animation */
+.contact-modal-overlay.open .contact-modal {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* closing state (when visible -> hidden) */
+.contact-modal.closing {
+  transform: translateY(8px) scale(0.98);
+  opacity: 0;
+}
+
+/* Modal header */
+.contact-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.contact-modal-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.95);
+}
+
+/* Close button */
+.contact-modal-close {
+  background: transparent;
+  border: none;
+  padding: 4px 8px;
+  line-height: 1;
+  cursor: pointer;
+  color: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+  font-size: 1.15rem;
+}
+
+.contact-modal-close:hover {
+  background: rgba(255,255,255,0.03);
+  transform: scale(1.03);
+}
+
+/* Modal body */
+.contact-modal-body {
+  padding: 12px 16px;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+/* Row for first/last name fields */
+.contact-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px; /* small spacing between row and next label */
+}
+.contact-row .col {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* prevent flex children from overflowing */
+}
+
+@media (max-width: 520px) {
+  .contact-row {
+    flex-direction: column;
+  }
+}
+
+/* Form elements */
+.contact-modal-body label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
+}
+
+.contact-modal, .contact-modal * {
+  box-sizing: border-box;
+}
+
+.contact-modal-body input,
+.contact-modal-body textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(0,0,0,0.18);
+  color: rgba(255,255,255,0.95);
+  margin-bottom: 12px;
+  font-family: inherit;
+  font-size: 0.92rem;
+}
+
+.contact-modal-body input::placeholder,
+.contact-modal-body textarea::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+.contact-modal-body input:focus,
+.contact-modal-body textarea:focus {
+  outline: none;
+  border-color: rgba(100,108,255,0.9);
+  box-shadow: 0 0 0 4px rgba(100,108,255,0.06);
+}
+
+/* Inputs - slightly shorter height */
+.contact-modal-body input {
+  height: 40px;
+}
+
+/* Message textarea - larger than other inputs */
+.contact-modal-body textarea {
+  min-height: 110px;
+  max-height: 36vh;
+  resize: vertical;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Modal footer */
+.contact-modal-footer {
+  padding: 10px 16px 12px 16px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.contact-modal-footer button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  color: rgba(255,255,255,0.95);
+  cursor: pointer;
+}
+
+.contact-modal-footer button:hover {
+  border-color: #646cff;
+}
+
+/* Utility: center small content (e.g., spinner) */
+.contact-modal-center {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 20px;
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .contact-modal,
+  .contact-modal-overlay {
+    transition: none;
+  }
+}
+
+/* Small screens: full width modal with little border radius */
+@media (max-width: 480px) {
+  .contact-modal {
+    width: calc(100vw - 28px);
+    border-radius: 10px;
+    max-height: 94vh;
+  }
+}
+
+/* Helpful focus outline for keyboard users */
+.contact-modal-close:focus,
+.contact-modal [tabindex]:focus {
+  outline: 3px solid rgba(100,108,255,0.18);
+  outline-offset: 2px;
+}
