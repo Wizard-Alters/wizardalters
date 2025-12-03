@@ -13,6 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Site background served from `public/images/site-background.png` */
+html {
+  height: auto;
+  background-image: linear-gradient(rgba(19, 5, 36, 0.9), rgba(0, 0, 0, 0.9)), url('/src/assets/site-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
