@@ -83,6 +83,12 @@ hr {
   font-size: 20px;
 }
 
+.socials-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
 /* Media Queries */
 @media (max-width: 767px) {
   #root {

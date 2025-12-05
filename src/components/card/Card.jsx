@@ -1,4 +1,5 @@
 import BuyButton from "../buyButton/BuyButton";
+import { useState, useEffect } from "react";
 import "./card.css";
 
 export default function Card(props) {

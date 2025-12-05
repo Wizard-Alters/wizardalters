@@ -19,36 +19,38 @@ export default function Socials() {
     <>
       <div className="socials">
         <h3>Connect With Us:</h3>
-        <a
-          id="ig"
-          href="https://www.instagram.com/wizardalters?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          target="_blank"
-        >
-          <FontAwesomeIcon icon={faInstagram} />
-        </a>
-        {/* <a
-            id="fb"
-            href="https://www.facebook.com/profile.php?id=61576092674965"
+        <div className="socials-icons">
+          <a
+            id="ig"
+            href="https://www.instagram.com/wizardalters?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
           >
-            <FontAwesomeIcon icon={faSquareFacebook} />
-          </a> */}
-        {/* <a
-            id="yt"
-            href="https://www.youtube.com/@Thortech117"
-            target="_blank"
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          {/* <a
+              id="fb"
+              href="https://www.facebook.com/profile.php?id=61576092674965"
+              target="_blank"
             >
-            <FontAwesomeIcon icon={faYoutube} />
+              <FontAwesomeIcon icon={faSquareFacebook} />
             </a> */}
+          {/* <a
+              id="yt"
+              href="https://www.youtube.com/@Thortech117"
+              target="_blank"
+              >
+              <FontAwesomeIcon icon={faYoutube} />
+              </a> */}
+          <a
+            id="contact"
+            aria-label="Open contact form"
+            onClick={() => setOpenModal(true)}
+            style={{ cursor: "pointer" }}
+          >
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+        </div>
       </div>
-      <a
-        id="contact"
-        aria-label="Open contact form"
-        onClick={() => setOpenModal(true)}
-        style={{ cursor: "pointer" }}
-      >
-        <FontAwesomeIcon icon={faEnvelope} />
-      </a>
 
       <ContactModal isOpen={openModal} onClose={() => setOpenModal(false)} />
 
